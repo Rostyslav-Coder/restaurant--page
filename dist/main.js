@@ -26,7 +26,18 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/header */ \"./src/js/header.js\");\n/* harmony import */ var _js_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/home */ \"./src/js/home.js\");\n\r\n\r\n\r\n\r\nfunction component() {\r\n  const PAGE = document.querySelector('#content')\r\n\r\n  // Lodash, now imported by this script\r\n  PAGE.innerHTML = _js_header__WEBPACK_IMPORTED_MODULE_1__.HEADER;\r\n  PAGE.innerHTML += _js_home__WEBPACK_IMPORTED_MODULE_2__.HOME_PAGE;\r\n\r\n  return PAGE;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/header */ \"./src/js/header.js\");\n/* harmony import */ var _js_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/home */ \"./src/js/home.js\");\n/* harmony import */ var _js_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/footer */ \"./src/js/footer.js\");\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n  const PAGE = document.querySelector('#content')\r\n\r\n  // Lodash, now imported by this script\r\n  PAGE.innerHTML = _js_header__WEBPACK_IMPORTED_MODULE_1__.HEADER;\r\n  PAGE.innerHTML += _js_home__WEBPACK_IMPORTED_MODULE_2__.HOME_PAGE;\r\n  PAGE.innerHTML += _js_footer__WEBPACK_IMPORTED_MODULE_3__.FOOTER;\r\n\r\n  return PAGE;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/footer.js":
+/*!**************************!*\
+  !*** ./src/js/footer.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FOOTER: () => (/* binding */ FOOTER)\n/* harmony export */ });\n// FOOTER TO RESTAURANT PAGE\r\n\r\nconst FOOTER = `\r\n  <div class=\"footer>\r\n    <p>This site, and the pizza, were developed by &copy;\r\n    <a url=\"https://www.linkedin.com/in/rostyslav-putnikov-76484926a/\"> Rostislav-Coder</a> using the latest achievements of space science.</p>\r\n  </div>\r\n`;\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/footer.js?");
 
 /***/ }),
 
