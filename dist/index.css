@@ -1,1 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap");
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 0 50px 0 200px;
+  background: linear-gradient(#770646 86%, #C20081 92%, #FF00F2 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header > .logo {
+  margin-right: auto;
+  height: 60px;
+  width: 60px;
+  font-family: "Rubik Maze", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header > .logo img {
+  width: 50px;
+  height: 50px;
+}
+.header > .button {
+  height: 50px;
+  width: 140px;
+  padding: auto;
+  background: linear-gradient(#770646 86%, #C20081 92%, #FF00F2 100%);
+  border: 4px double #000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header > .button > p {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.page {
+  width: 100vw;
+  position: relative;
+}
+.page > .bg-lower {
+  height: 853px;
+  width: 1280px;
+  background-image: url("images/universe.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: -3;
+}
+.page > .text {
+  --parallax-spead: -25;
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 20vh;
+  left: 5%;
+  z-index: -2;
+  color: #FDF52D;
+  font-family: "Rubik Maze", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 400;
+}
+.page > .text span {
+  color: #FF2D20;
+}
+.page > .earth {
+  --parallax-spead: 35;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 20vh;
+  right: 15%;
+  z-index: -2;
+}
+.page > .earth > img {
+  height: 400px;
+  width: 400px;
+}
+.page > .bg-top {
+  --parallax-spead: 1;
+  height: 1200px;
+  width: 1280px;
+  position: absolute;
+  bottom: -1000px;
+  z-index: -1;
+}
+.page > .moon-shatle {
+  --parallax-spead: -10;
+  height: 500px;
+  width: 575px;
+  position: absolute;
+  top: 650px;
+  left: 30%;
+  z-index: 1;
+}
+.page > .moon-shatle > img {
+  height: 500px;
+  width: 575px;
+}
+.page > .pizza-man-1 {
+  --parallax-spead: -10;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  top: 700px;
+  left: 5%;
+  z-index: 2;
+}
+.page > .pizza-man-1 img {
+  height: 450px;
+  width: 450px;
+}
+.page > .pizza-man-2 {
+  --parallax-spead: -20;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 780px;
+  right: 10%;
+  z-index: 2;
+}
+.page > .pizza-man-2 > img {
+  height: 400px;
+  width: 400px;
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-spead) * 10px));
+  }
+}
+.parallax > * {
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+
 /*# sourceMappingURL=index.css.map */
