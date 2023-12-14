@@ -1,0 +1,116 @@
+// HOME PAGE
+
+.page {
+  width: 100vw;
+  position: relative;
+
+  >.bg-lower {
+    height: 853px;
+    width: 1280px;
+    background-image: url('images/universe.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -3;
+  }
+
+  >.text {
+    --parallax-spead: -25;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 20vh;
+    left: 5%;
+    z-index: -2;
+    color: #FDF52D;
+    font-family: 'Rubik Maze', sans-serif;
+    font-size: 4.2rem;
+    font-weight: 400;
+
+    span {
+      color: #FF2D20;
+    }
+  }
+
+  >.earth {
+    --parallax-spead: 35;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 20vh;
+    right: 15%;
+    z-index: -2;
+
+    >img {
+      height: 400px;
+      width: 400px;
+    }
+  }
+
+  >.bg-top {
+    --parallax-spead: 1;
+    height: 1200px;
+    width: 1280px;
+    // background-image: url('images/moon-landscape.png');
+    // background-size: cover;
+    position: absolute;
+    bottom: -1000px;
+    z-index: -1;
+  }
+
+  >.moon-shatle {
+    --parallax-spead: -10;
+    height: 500px;
+    width: 575px;
+    position: absolute;
+    top: 650px;
+    left: 30%;
+    z-index: 1;
+
+    >img {
+      height: 500px;
+      width: 575px;
+    }
+  }
+
+  >.pizza-man-1 {
+    --parallax-spead: -10;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    top: 700px;
+    left: 5%;
+    z-index: 2;
+
+    img {
+      height: 450px;
+      width: 450px;
+    }
+  }
+
+  >.pizza-man-2 {
+    --parallax-spead: -20;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 780px;
+    right: 10%;
+    z-index: 2;
+
+    >img {
+      height: 400px;
+      width: 400px;
+    }
+  }
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-spead) * 10px));
+  }
+}
+
+.parallax>* {
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
