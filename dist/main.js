@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FOOTER: () => (/* binding */ FOOTER)\n/* harmony export */ });\n// FOOTER TO RESTAURANT PAGE\r\n\r\nconst FOOTER = `\r\n  <div class=\"footer\">\r\n    <p>This site, and the pizza, were developed by &copy;\r\n    <a url=\"https://www.linkedin.com/in/rostyslav-putnikov-76484926a/\"> Rostislav-Coder</a> using the latest achievements of space science.</p>\r\n  </div>\r\n`;\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FOOTER: () => (/* binding */ FOOTER)\n/* harmony export */ });\n// FOOTER TO RESTAURANT PAGE\r\n\r\nconst FOOTER = `\r\n  <div class=\"footer\">\r\n    <p>This site, and the pizza, were developed by &copy;\r\n    <a href=\"https://www.linkedin.com/in/rostyslav-putnikov-76484926a/\"> Rostislav-Coder</a> using the latest achievements of space science.</p>\r\n  </div>\r\n`;\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/footer.js?");
 
 /***/ }),
 
