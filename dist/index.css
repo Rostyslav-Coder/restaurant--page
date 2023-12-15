@@ -97,12 +97,13 @@ body {
   z-index: -9;
   color: #FDF52D;
   font-family: "Rubik Maze", sans-serif;
-  font-size: 3.2rem;
+  font-size: 3.1rem;
   font-weight: 400;
 }
 
 .page>.text span {
   color: #FF2D20;
+  font-size: 3.4rem;
 }
 
 .page>.earth {
@@ -156,7 +157,7 @@ body {
 
 .page>.pizza-man-1>img {
   height: 450px;
-  animation: 5s ease-in 0s infinite both astronaut;
+  animation: 6s ease-in 0s infinite both astronaut;
 }
 
 .page>.pizza-man-2 {
@@ -172,7 +173,7 @@ body {
   position: absolute;
   top: 70px;
   height: 350px;
-  animation: 7s ease-in 2s infinite both astronaut;
+  animation: 4s ease-in 2s infinite both astronaut;
 
 }
 
