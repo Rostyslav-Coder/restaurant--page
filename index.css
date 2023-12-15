@@ -1,6 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap");
 
+
+/* Animations */
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-spead) * 10px));
+  }
+}
+
+@keyframes astronaut {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0) scale(1);
+  }
+
+  25% {
+    transform: translateX(-20px) translateY(-30px) rotate(-4deg) scale(1.03);
+  }
+
+  50% {
+    transform: translateX(0) translateY(0) rotate(0) scale(1);
+  }
+
+  75% {
+    transform: translateX(40px) translateY(-40px) rotate(9deg) scale(1.02);
+  }
+}
+
+
 /* General properties */
 * {
   margin: 0;
@@ -19,6 +46,7 @@ body {
   display: grid;
   grid-template-rows: 80px min-content 50px;
 }
+
 
 /* Header Properies */
 .header {
@@ -40,9 +68,11 @@ body {
   font-size: 3.6rem;
   font-weight: 400;
   color: #FFF;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
 .header>.logo>img {
@@ -71,6 +101,7 @@ body {
   text-transform: uppercase;
 }
 
+
 /* Home Page Properties */
 .page {
   grid-row: 2/3;
@@ -82,7 +113,7 @@ body {
 .page>.back-bg {
   grid-row: 1/6;
   grid-column: 1/6;
-  z-index: -10;
+  z-index: -4;
 }
 
 .page>.back-bg>img {
@@ -92,18 +123,18 @@ body {
 .page>.text {
   --parallax-spead: -25;
   grid-row: 2/3;
-  grid-column: 2/3;
+  grid-column: 2/4;
   margin-top: auto;
-  z-index: -9;
+  z-index: -3;
   color: #FDF52D;
   font-family: "Rubik Maze", sans-serif;
-  font-size: 3.1rem;
+  font-size: 4.5rem;
   font-weight: 400;
 }
 
 .page>.text span {
   color: #FF2D20;
-  font-size: 3.4rem;
+  font-size: 6.6rem;
 }
 
 .page>.earth {
@@ -111,20 +142,19 @@ body {
   grid-row: 2/4;
   grid-column: 4/5;
   margin: auto;
-  z-index: -8;
+  z-index: -3;
 }
 
 .page>.earth>img {
   height: 100%;
   object-fit: contain;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .page>.front-bg {
-  /* --parallax-spead: 1; */
   grid-row: 4/9;
   grid-column: 1/6;
-  z-index: -7;
+  z-index: -2;
 }
 
 .page>.front-bg>img {
@@ -137,7 +167,6 @@ body {
   grid-row: 4/8;
   grid-column: 2/4;
   margin-left: auto;
-  z-index: -6;
 }
 
 .page>.moon-shatle>img {
@@ -147,64 +176,102 @@ body {
 }
 
 .page>.pizza-man-1 {
-  --parallax-spead: 6;
   grid-row: 5/9;
   grid-column: 2/3;
-  /* margin-top: auto; */
   margin: auto;
-  z-index: -5;
 }
 
 .page>.pizza-man-1>img {
   height: 450px;
-  animation: 6s ease-in 0s infinite both astronaut;
+  cursor: pointer;
+  z-index: 4;
+  animation: 6s ease-in 0s infinite astronaut;
 }
 
 .page>.pizza-man-2 {
-  --parallax-spead: 6;
   grid-row: 5/9;
   grid-column: 4/5;
-  /* margin-top: auto; */
   position: relative;
-  z-index: -5;
 }
 
 .page>.pizza-man-2>img {
   position: absolute;
   top: 70px;
   height: 350px;
-  animation: 4s ease-in 2s infinite both astronaut;
-
+  cursor: pointer;
+  z-index: 2;
+  animation: 4s ease-in 0s infinite astronaut;
 }
 
-@keyframes parallax {
-  to {
-    transform: translateY(calc(var(--parallax-spead) * 10px));
-  }
+.page>.moon-shatle>p,
+.page>.pizza-man-1>p,
+.page>.pizza-man-2>p {
+  position: relative;
+  width: 200px;
+  background: #F0F0F0;
+  font-size: 1.2rem;
+  text-align: justify;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
-@keyframes astronaut {
-  0% {
-    transform: translateX(0) translateY(0) rotate(0) scale(1);
-  }
+.page>.moon-shatle>p {
+  top: 350px;
+  left: 20%;
+  z-index: 2;
+}
 
-  25% {
-    transform: translateX(-20px) translateY(-30px) rotate(-4deg) scale(1.03);
-  }
+.page>.moon-shatle>p::after,
+.page>.pizza-man-1>p::after,
+.page>.pizza-man-2>p::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #F0F0F0;
+}
 
-  50% {
-    transform: translateX(0) translateY(0) rotate(0) scale(1);
-  }
+.page>.pizza-man-1>p:nth-child(2),
+.page>.pizza-man-2>p:nth-child(2) {
+  width: 130px;
+  bottom: -50px;
+  left: -10%;
+  opacity: 0;
+}
 
-  75% {
-    transform: translateX(40px) translateY(-40px) rotate(9deg) scale(1.02);
-  }
+.page>.moon-shatle>p:nth-child(2) {
+  width: 130px;
+  bottom: -200px;
+  opacity: 0;
+}
+
+.page>.moon-shatle>p:nth-child(2)::after,
+.page>.pizza-man-1>p:nth-child(2)::after,
+.page>.pizza-man-2>p:nth-child(2)::after {
+  top: 50%;
+  left: 138px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #F0F0F0;
+}
+
+.page>.moon-shatle:hover>p:nth-child(2),
+.page>.pizza-man-1:hover>p:nth-child(2),
+.page>.pizza-man-2:hover>p:nth-child(2) {
+  opacity: 1;
 }
 
 .parallax>* {
   animation: parallax linear;
   animation-timeline: scroll();
 }
+
 
 /* Footer properties */
 .footer {
@@ -218,8 +285,13 @@ body {
 .footer>p {
   color: #FFF;
   font-family: sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 
-/*# sourceMappingURL=index.css.map */
+.footer>p>a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
