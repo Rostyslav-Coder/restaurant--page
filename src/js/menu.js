@@ -4,7 +4,7 @@ const MENU_PAGE = `
   <div class="menu-page">
 
     <div class="dish">
-      <h1>Cosmo-Cowboy Pizza</h1>
+      <h1>Cosmo Cowboy Pizza</h1>
       <div class="sub-div">
         <img src="../dist/images/beef-pizza.png" />
         <p>
@@ -37,7 +37,7 @@ const MENU_PAGE = `
     </div>
 
     <div class="dish">
-      <h1>Exotic Pizza</h1>
+      <h1>Starry Exotic Pizza</h1>
       <div class="sub-div">
         <img src="../dist/images/exotic-pizza.png" />
         <p>
@@ -107,11 +107,11 @@ const MENU_PAGE = `
     </div>
 
     <div class="dish">
-      <h1>Fruit Juice</h1>
+      <h1>Meteor Juice</h1>
       <div class="sub-div">
         <img src="../dist/images/juice.png" />
         <p>
-          Our juice is the juice that we make from lunar fruits, which we grow in greenhouses.
+          Our juice is the juice that we make from lunar meteorites that fall on the surface of the Moon.
           It has a bright and saturated color, and a sweet and sour taste.
           This drink is for those who want to get a boost of energy and vitamins.
         </p>
@@ -123,7 +123,7 @@ const MENU_PAGE = `
       <div class="sub-div">
         <img src="../dist/images/beer.png" />
         <p>
-          Our beer is the beer that we brew from lunar malt, which we get from lunar dust.
+          Our beer is the beer that we brew from rocket fuel and moon dust.
           It has a foamy and bubbly texture, and a bitter and refreshing taste.
           This drink is for those who want to relax and enjoy the atmosphere.
         </p>
