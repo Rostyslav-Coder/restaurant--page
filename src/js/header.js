@@ -7,9 +7,9 @@ const HEADER = `
       <img src="../dist/images/moon.png" alt="logotip" />
       <div>onPizza</div>
     </div>
-      <div class="button" id="home">
+    <div class="button" id="home">
       <p>Home</p>
-      </div>
+    </div>
     <div class="button" id="menu">
       <p>Menu</p>
     </div>
