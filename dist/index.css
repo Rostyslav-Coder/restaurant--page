@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap");
-
+@import url(https://fonts.googleapis.com/css?family=Rubik+Scribble:regular);
 
 /* Animations */
 @keyframes parallax {
@@ -26,6 +26,7 @@
     transform: translateX(40px) translateY(-40px) rotate(9deg) scale(1.02);
   }
 }
+
 
 
 /* General properties */
@@ -94,7 +95,7 @@ body {
 }
 
 .header>.button>p {
-  font-family: sans-serif;
+  font-family: 'Rubik Scribble', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   color: #FFF;
@@ -103,24 +104,24 @@ body {
 
 
 /* Home Page Properties */
-.page {
+.home-page {
   grid-row: 2/3;
   display: grid;
   grid-template-columns: 0.75fr repeat(3, 3fr) 0.75fr;
   grid-template-rows: 30px repeat(7, minmax(min-content, max-content));
 }
 
-.page>.back-bg {
+.home-page>.back-bg {
   grid-row: 1/6;
   grid-column: 1/6;
   z-index: -4;
 }
 
-.page>.back-bg>img {
+.home-page>.back-bg>img {
   object-fit: fill;
 }
 
-.page>.text {
+.home-page>.text {
   --parallax-spead: -25;
   grid-row: 2/3;
   grid-column: 2/4;
@@ -132,12 +133,12 @@ body {
   font-weight: 400;
 }
 
-.page>.text span {
+.home-page>.text span {
   color: #FF2D20;
   font-size: 6.6rem;
 }
 
-.page>.earth {
+.home-page>.earth {
   --parallax-spead: 35;
   grid-row: 2/4;
   grid-column: 4/5;
@@ -145,56 +146,56 @@ body {
   z-index: -3;
 }
 
-.page>.earth>img {
+.home-page>.earth>img {
   height: 100%;
   object-fit: contain;
   transform: scale(1.15);
 }
 
-.page>.front-bg {
+.home-page>.front-bg {
   grid-row: 4/9;
   grid-column: 1/6;
   z-index: -2;
 }
 
-.page>.front-bg>img {
+.home-page>.front-bg>img {
   height: 100%;
   object-fit: fill;
 }
 
-.page>.moon-shatle {
+.home-page>.moon-shatle {
   --parallax-spead: 5;
   grid-row: 4/8;
   grid-column: 2/4;
   margin-left: auto;
 }
 
-.page>.moon-shatle>img {
+.home-page>.moon-shatle>img {
   height: 500px;
   width: auto;
   object-fit: cover;
 }
 
-.page>.pizza-man-1 {
+.home-page>.pizza-man-1 {
   grid-row: 5/9;
   grid-column: 2/3;
   margin: auto;
 }
 
-.page>.pizza-man-1>img {
+.home-page>.pizza-man-1>img {
   height: 450px;
   cursor: pointer;
   z-index: 4;
   animation: 6s ease-in 0s infinite astronaut;
 }
 
-.page>.pizza-man-2 {
+.home-page>.pizza-man-2 {
   grid-row: 5/9;
   grid-column: 4/5;
   position: relative;
 }
 
-.page>.pizza-man-2>img {
+.home-page>.pizza-man-2>img {
   position: absolute;
   top: 70px;
   height: 350px;
@@ -203,9 +204,9 @@ body {
   animation: 4s ease-in 0s infinite astronaut;
 }
 
-.page>.moon-shatle>p,
-.page>.pizza-man-1>p,
-.page>.pizza-man-2>p {
+.home-page>.moon-shatle>p,
+.home-page>.pizza-man-1>p,
+.home-page>.pizza-man-2>p {
   position: relative;
   width: 200px;
   background: #F0F0F0;
@@ -216,15 +217,15 @@ body {
   padding: 5px 10px;
 }
 
-.page>.moon-shatle>p {
+.home-page>.moon-shatle>p {
   top: 350px;
   left: 20%;
   z-index: 2;
 }
 
-.page>.moon-shatle>p::after,
-.page>.pizza-man-1>p::after,
-.page>.pizza-man-2>p::after {
+.home-page>.moon-shatle>p::after,
+.home-page>.pizza-man-1>p::after,
+.home-page>.pizza-man-2>p::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -237,23 +238,23 @@ body {
   border-top: 10px solid #F0F0F0;
 }
 
-.page>.pizza-man-1>p:nth-child(2),
-.page>.pizza-man-2>p:nth-child(2) {
+.home-page>.pizza-man-1>p:nth-child(2),
+.home-page>.pizza-man-2>p:nth-child(2) {
   width: 130px;
   bottom: -50px;
   left: -10%;
   opacity: 0;
 }
 
-.page>.moon-shatle>p:nth-child(2) {
+.home-page>.moon-shatle>p:nth-child(2) {
   width: 130px;
   bottom: -200px;
   opacity: 0;
 }
 
-.page>.moon-shatle>p:nth-child(2)::after,
-.page>.pizza-man-1>p:nth-child(2)::after,
-.page>.pizza-man-2>p:nth-child(2)::after {
+.home-page>.moon-shatle>p:nth-child(2)::after,
+.home-page>.pizza-man-1>p:nth-child(2)::after,
+.home-page>.pizza-man-2>p:nth-child(2)::after {
   top: 50%;
   left: 138px;
   border-top: 10px solid transparent;
@@ -261,9 +262,9 @@ body {
   border-left: 10px solid #F0F0F0;
 }
 
-.page>.moon-shatle:hover>p:nth-child(2),
-.page>.pizza-man-1:hover>p:nth-child(2),
-.page>.pizza-man-2:hover>p:nth-child(2) {
+.home-page>.moon-shatle:hover>p:nth-child(2),
+.home-page>.pizza-man-1:hover>p:nth-child(2),
+.home-page>.pizza-man-2:hover>p:nth-child(2) {
   opacity: 1;
 }
 
@@ -273,7 +274,69 @@ body {
 }
 
 
-/* Footer properties */
+/* Menu Properties */
+.menu-page {
+  background-image: url(../dist/images/universe.png);
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 50px;
+}
+
+.menu-page>.dish {
+  background: linear-gradient(#770646 96%, #C20081 98%, #FF00F2 100%);
+  height: 320px;
+  width: 500px;
+  margin: auto;
+  border: 4px double #000;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-page>.dish>h1 {
+  font-family: 'Rubik Scribble';
+  color: #FFF;
+  font-size: 2.5rem;
+}
+
+.menu-page>.dish>.sub-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-page>.dish>.sub-div>img {
+  transition: 1s;
+  height: 100%;
+  width: 45%;
+  box-shadow: 0 0 15px #F0F0F0;
+}
+
+.menu-page>.dish>.sub-div>img:hover {
+  box-shadow: none;
+  transform: rotate(720deg) scale(2);
+}
+
+.menu-page>.dish>.sub-div>p {
+  height: 100%;
+  width: 45%;
+  padding: 10px;
+  box-shadow: 0 0 15px #F0F0F0;
+  color: #F0F0F0;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+
+
+/* Footer Propertiess */
 .footer {
   grid-row: 3/4;
   display: flex;
