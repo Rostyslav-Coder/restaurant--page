@@ -5,7 +5,7 @@ const MENU_PAGE = `
 
     <div class="dish">
       <h1>Cosmo-Cowboy Pizza</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/beef-pizza.png" />
         <p>
           This pizza is for those who love some real beef and ain’t afraid of no alien abductions.
@@ -13,13 +13,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Crater Cheese Pizza</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/cheese-pizza.png" />
         <p>
           Our cheese is made from lunar cheese, which we mine from craters.
@@ -27,13 +24,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Radioactive Pizza</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/mushroom-pizza.png" />
         <p>
           Our mushrooms are collected on the dark side of the Moon, where they grow under the influence of cosmic radiation.
@@ -41,13 +35,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Exotic Pizza</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/exotic-pizza.png" />
         <p>
           Our pineapples are brought from a secret alien base, which is located on the far side of the Moon.
@@ -56,13 +47,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Snorting Astronaut</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/pork-burger.png" />
         <p>
           Our bacon is the meat of lunar pigs, who live in special domes and feed on lunar herbs.
@@ -70,13 +58,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Cosmic Chicken</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/chicken-burger.png" />
         <p>
           Our chicken is the meat of lunar chickens, who hatch from eggs that we find in meteorites.
@@ -85,13 +70,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Galactic Fish</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/fish-burger.png" />
         <p>
           Our fish is the meat of lunar fish, who live in underground lakes, which we open by drilling.
@@ -100,13 +82,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Starry Potato</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/french-potato.png" />
         <p>
           Our potatoes are grown on lunar soil, which is enriched with minerals and vitamins.
@@ -114,13 +93,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Lunar Water</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/water.png" />
         <p>
           Our water is the water that flows from lunar geysers, which we activate with special devices.
@@ -129,13 +105,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Fruit Juice</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/juice.png" />
         <p>
           Our juice is the juice that we make from lunar fruits, which we grow in greenhouses.
@@ -144,13 +117,10 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
 
     <div class="dish">
       <h1>Beer Rocket</h1>
-      <div>
+      <div class="sub-div">
         <img src="../dist/images/beer.png" />
         <p>
           Our beer is the beer that we brew from lunar malt, which we get from lunar dust.
@@ -159,10 +129,6 @@ const MENU_PAGE = `
         </p>
       </div>
     </div>
-    <div class="image">
-      <img src="" />
-    </div>
-
   </div>
 `;
 
