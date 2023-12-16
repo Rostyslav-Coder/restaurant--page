@@ -1,7 +1,7 @@
 // HOME PAGE TO RESTAURANT PAGE
 
 const HOME_PAGE = `
-  <div class="page"> 
+  <div class="home-page"> 
     <div class="back-bg">
       <img src="../dist/images/universe.png" alt="earth" />
     </div>
