@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Rubik+Scribble:regular);
+@import url("https://fonts.googleapis.com/css?family=Rubik+Scribble:regular");
 
-/* Animations */
+
+/* ANIMATIONS */
 @keyframes parallax {
   to {
     transform: translateY(calc(var(--parallax-spead) * 10px));
@@ -28,8 +29,7 @@
 }
 
 
-
-/* General properties */
+/* GENERAL PROPERTIES */
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +49,7 @@ body {
 }
 
 
-/* Header Properies */
+/* HEADER PROPERTIES */
 .header {
   grid-row: 1/2;
   width: 100vw;
@@ -103,7 +103,7 @@ body {
 }
 
 
-/* Home Page Properties */
+/* HOME PAGE PROPERTIES */
 .home-page {
   grid-row: 2/3;
   display: grid;
@@ -274,8 +274,9 @@ body {
 }
 
 
-/* Menu Properties */
+/* MENU PAGE PROPERTIES */
 .menu-page {
+  grid-row: 2/3;
   background-image: url(../dist/images/universe.png);
   background-attachment: fixed;
   background-size: cover;
@@ -335,8 +336,132 @@ body {
 }
 
 
-/* About Properties */
+/* DELIVERY PAGE PROPERTIES */
+.delivery-page {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 0.75fr repeat(3, 3fr) 0.75fr;
+  grid-template-rows: 30px repeat(7, minmax(min-content, max-content));
+}
+
+.delivery-page>.back-bg {
+  grid-row: 1/6;
+  grid-column: 1/6;
+  z-index: -4;
+}
+
+.delivery-page>.back-bg>img {
+  object-fit: fill;
+}
+
+.delivery-page>.delivery {
+  --parallax-spead: -75;
+  grid-row: 3/5;
+  grid-column: 2/4;
+  margin: auto auto 0;
+  z-index: -3;
+}
+
+.delivery-page>.delivery>img {
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(30deg);
+}
+
+.delivery-page>.earth {
+  --parallax-spead: 35;
+  grid-row: 2/4;
+  grid-column: 4/5;
+  margin: auto;
+  z-index: -3;
+}
+
+.delivery-page>.earth>img {
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.15);
+}
+
+.delivery-page>.front-bg {
+  grid-row: 4/9;
+  grid-column: 1/6;
+  z-index: -2;
+}
+
+.delivery-page>.front-bg>img {
+  height: 100%;
+  object-fit: fill;
+}
+
+.delivery-page>.free-delivery {
+  --parallax-spead: 5;
+  grid-row: 4/8;
+  grid-column: 2/4;
+  margin: auto;
+}
+
+.delivery-page>.free-delivery>img {
+  height: auto;
+  width: 400px;
+  object-fit: cover;
+}
+
+.delivery-page>.delivery-man {
+  grid-row: 5/8;
+  grid-column: 4/5;
+  position: relative;
+}
+
+.delivery-page>.delivery-man>img {
+  height: 400px;
+  z-index: 2;
+  animation: 4s ease-in 0s infinite astronaut;
+}
+
+.delivery-page>.delivery>p,
+.delivery-page>.free-delivery>p,
+.delivery-page>.delivery-man>p {
+  position: relative;
+  width: 220px;
+  background: #F0F0F0;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.3;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.delivery-page>.delivery>p::after,
+.delivery-page>.free-delivery>p::after,
+.delivery-page>.delivery-man>p::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #F0F0F0;
+}
+
+.delivery-page>.delivery>p>span,
+.delivery-page>.free-delivery>p>span,
+.delivery-page>.delivery-man>p>span {
+  color: #770646;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/* ABOUT PAGE PROPERTIES */
 .about-page {
+  grid-row: 2/3;
   height: calc(100vh - 130px);
   background-image: url('./images/universe.png');
   background-size: cover;
@@ -386,8 +511,7 @@ body {
 }
 
 
-
-/* Footer Properties */
+/* FOOTER PROPERTIES */
 .footer {
   grid-row: 3/4;
   display: flex;
