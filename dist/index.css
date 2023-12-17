@@ -459,6 +459,13 @@ body {
 }
 
 
+/* CONTACT PAGE PROPERTIES */
+.contact-page {
+  background: url(../dist/images/universe.png);
+  color: #F0F0F0;
+}
+
+
 /* ABOUT PAGE PROPERTIES */
 .about-page {
   grid-row: 2/3;
