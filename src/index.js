@@ -8,6 +8,7 @@ import { DELIVERY_PAGE } from './js/delivery';
 import { CONTACT_PAGE } from './js/contact';
 import { ABOUT_PAGE } from './js/about';
 import { FOOTER } from './js/footer';
+import { addMask } from './js/mask';
 
 function component(_page = HOME_PAGE) {
   const PAGE = document.querySelector('#content')
@@ -37,6 +38,9 @@ function component(_page = HOME_PAGE) {
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       component(buttonPageMap[button.id]);
+      if (button.id === 'contact') {
+        addMask();
+      }
     });
   });
 
