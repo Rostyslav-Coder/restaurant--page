@@ -10,13 +10,13 @@ const CONTACT_PAGE = `
       </p>
     </div>
     <div class="pizza-man-3">
-      <img src="../dist/images/pizza-man-1.png" alt="pizza-man" />
+      <img src="images/pizza-man-1.png" alt="pizza-man" />
     </div>
     <div class="pizza-man-4">
-      <img src="../dist/images/pizza-man-3.png" alt="pizza-man" />
+      <img src="images/pizza-man-3.png" alt="pizza-man" />
     </div>
     <div class="delivery-man-2">
-      <img src="../dist/images/delivery-man.png" alt="delivery-man" />
+      <img src="images/delivery-man.png" alt="delivery-man" />
     </div>
     <div id="mask"></div>
   </div>

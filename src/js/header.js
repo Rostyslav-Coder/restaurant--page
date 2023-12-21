@@ -4,7 +4,7 @@ const HEADER = `
   <div class="header" id="header" >
     <div class="logo"  id="logo">
       <div>m</div>
-      <img src="../dist/images/moon.png" alt="logotip" />
+      <img src="images/moon.png" alt="logotip" />
       <div>onPizza</div>
     </div>
     <div class="button" id="home">
