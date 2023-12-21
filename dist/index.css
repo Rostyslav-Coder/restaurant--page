@@ -85,22 +85,22 @@ body {
 
 .header>.logo>* {
   font-family: "Rubik Maze", Arial, Helvetica, sans-serif;
-  font-size: calc(44px + 1vw);
+  font-size: 9vh;
   font-weight: normal;
   color: var(--white);
   text-transform: uppercase;
 }
 
 .header>.logo>img {
-  height: calc(46px + 1vw);
+  height: 10vh;
 }
 
 .header>.button {
   height: 8vh;
   width: 10vw;
   background: linear-gradient(var(--dark-magenta) 85%, var(--middle-violet-red) 90%, var(--magenta) 95%);
-  border: 4px double #000;
-  border-radius: 15px;
+  border: 0.4vw double #000;
+  border-radius: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +109,7 @@ body {
 
 .header>.button>p {
   font-family: 'Rubik Scribble', Arial, Helvetica, sans-serif;
-  font-size: calc(6.5px + 1vw);
+  font-size: 3.5vh;
   font-weight: bold;
   color: var(--white);
   text-transform: uppercase;
@@ -300,17 +300,17 @@ body {
   background-image: url(../dist/images/universe.png);
   background-attachment: fixed;
   background-size: cover;
-  padding: 50px;
+  padding: 8vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 50px;
+  gap: 8vh;
 }
 
 .menu-page>.dish {
-  background: linear-gradient(#770646 96%, #C20081 98%, #FF00F2 100%);
-  height: 320px;
-  width: 500px;
+  background: linear-gradient(var(--dark-magenta) 97%, var(--middle-violet-red) 98%, var(--magenta) 99%);
+  height: calc(300px + 3vh);
+  width: calc(480px + 3vw);
   margin: auto;
   border: 4px double #000;
   border-radius: 20px;
@@ -342,7 +342,7 @@ body {
 
 .menu-page>.dish>.sub-div>img:hover {
   box-shadow: none;
-  transform: rotate(1440deg) scale(2);
+  transform: rotate(1440deg) scale(1.8);
 }
 
 .menu-page>.dish>.sub-div>p {
