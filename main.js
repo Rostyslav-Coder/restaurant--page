@@ -70,7 +70,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FOOTER: () => (/* binding */ FOOTER)\n/* harmony export */ });\n// FOOTER TO RESTAURANT PAGE\r\n\r\nconst FOOTER = `\r\n  <div class=\"footer\">\r\n    <p>This site, and the pizza, were developed by \r\n    <a href=\"https://www.linkedin.com/in/rostyslav-putnikov-76484926a/\">&copy; Rostislav-Coder</a> using the latest achievements of space science.</p>\r\n  </div>\r\n`;\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   FOOTER: () => (/* binding */ FOOTER)\n/* harmony export */ });\n// FOOTER TO RESTAURANT PAGE\r\n\r\nconst FOOTER = `\r\n  <div class=\"footer\">\r\n    <p>\r\n      This website was developed by Rostyslav-Coder using the latest achievements in space science and artifacts of alien visitors. If you liked my website, feel free to contact me and order a web page from me. But don't you dare order pizza from me, I only make it for myself and my friends.\r\n    </p>\r\n    <p>\r\n      <a href=\"https://www.linkedin.com/in/rostyslav-putnikov-76484926a/\">\r\n        &copy; 2023 Rostyslav-Coder. All rights reserved.\r\n      </a>\r\n    </p>\r\n    <p><a href=\"disclaimer.html\">Disclaimer</a></p>\r\n  </div>\r\n`;\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/js/footer.js?");
 
 /***/ }),
 
