@@ -45,7 +45,7 @@
 
 body {
   width: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .content {
@@ -606,28 +606,30 @@ body {
   grid-row: 3/4;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#FF89F9 5%, #C20081 20%, #770646 100%);
+  background: linear-gradient(var(--magenta) 5%, var(--middle-violet-red) 10%, var(--dark-magenta) 15%);
+  padding: 20px;
 }
 
 .footer>p {
-  color: #F0F0F0;
+  color: var(--white);
   font-family: sans-serif;
-  font-size: 1.1rem;
-  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 .footer>p>a {
   text-decoration: none;
-  color: #F0F0F0;
-  font-size: 1.3rem;
-  font-weight: 700;
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #mask {
   grid-row: 2/3;
-  /* Верхний фон */
   background: black;
   position: absolute;
   top: 0;
