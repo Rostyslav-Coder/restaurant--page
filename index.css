@@ -552,7 +552,7 @@ body {
 /* ABOUT PAGE PROPERTIES */
 .about-page {
   grid-row: 2/3;
-  height: calc(100vh - 130px);
+  height: 76vh;
   background-image: url('./images/universe.png');
   background-size: cover;
   padding: 30px;
@@ -563,18 +563,18 @@ body {
 }
 
 .about-page>.card {
-  background: linear-gradient(#770646 96%, #C20081 98%, #FF00F2 100%);
+  background: linear-gradient(var(--dark-magenta) 97%, var(--middle-violet-red) 98%, var(--magenta) 99%);
   height: 95%;
   width: 80%;
   padding: 25px;
-  border: 4px double #000;
+  border: 4px double var(--black);
   border-radius: 20px;
 }
 
 .about-page>.card>h1 {
   font-family: 'Rubik Scribble', sans-serif;
   font-size: 3rem;
-  color: #F0F0F0;
+  color: var(--white);
   text-align: center;
   text-transform: uppercase;
 }
@@ -588,15 +588,15 @@ body {
 
 .about-page>.card>.sub-card>p {
   font-size: 1.2rem;
-  color: #F0F0F0;
+  color: var(--white);
   text-align: justify;
 }
 
 .about-page>.card>.sub-card>img {
-  background: linear-gradient(#770646 96%, #C20081 98%, #FF00F2 100%);
+  background: linear-gradient(var(--dark-magenta) 97%, var(--middle-violet-red) 98%, var(--magenta) 99%);
   height: 100%;
   width: 28%;
-  border: 4px double #000;
+  border: 4px double var(--black);
   border-radius: 15px;
 }
 
