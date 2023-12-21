@@ -15,7 +15,7 @@ const DELIVERY_PAGE = `
     <div class="front-bg parallax">
       <img src="../dist/images/moon-landscape.png" alt="moon landscape" />
     </div>
-    <div class="free-delivery parallax">
+    <div class="free-delivery">
       <P>Or, we can catapult your order onto your head <br><span>for free</span> as we fly overhead.</p>
       <img src="../dist/images/free-delivery.png" alt="free-delivery mashine" />
     </div>
